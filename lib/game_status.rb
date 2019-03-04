@@ -19,9 +19,9 @@ def won?(board)
   WIN_COMBINATIONS.each do |a_combination|
     x = a_combination.map { |x| board[x] }
     puts x.inspect
-    # if x.all?("X") || x.all?("O") do
-    #   puts "true: #{x}"
-    # end
+    if x.all?("X") || x.all?("O") do
+      puts "true: #{x}"
+    end
   end
   false
 end
