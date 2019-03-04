@@ -23,5 +23,5 @@ def won?(board)
       puts "true"
     end
   end
-  false
+  return false
 end
