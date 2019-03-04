@@ -16,10 +16,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |a_combination|
+  WIN_COMBINATIONS.each do |win_combination|
     puts win_combination.inspect
-    x = win_combination.map { |x| board[x] }
-    if x.all? { |w| w == "X" } || x.all? { |w| w == "O" }
+    combo = win_combination.map { |x| board[x] }
+    if combo.all? { |w| w == "X" } || combo.all? { |w| w == "O" }
       return win_combination
     end
   end
