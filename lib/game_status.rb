@@ -23,10 +23,10 @@ def won?(board)
     xx = x.all? { |w| w == "X" }
     oo = x.all? { |w| w == "O" }
     
-    puts "x: #{x.inspect} -> #{xx}/#{oo}"
-    # if x.all?("X") || x.all?("O")
-    #   puts "true"
-    # end
+    # puts "x: #{x.inspect} -> #{xx}/#{oo}"
+    if x.all? { |w| w == "X" } || x.all? { |w| w == "O" }
+      return true
+    end
   end
   return false
 end
