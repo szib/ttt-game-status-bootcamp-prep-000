@@ -22,3 +22,7 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? { |x| x == "X" || x == "O" }
+end
