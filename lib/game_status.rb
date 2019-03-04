@@ -20,8 +20,8 @@ def won?(board)
     puts a_combination.inspect
     x = a_combination.map { |x| board[x] }
     
-    xx = x.all? "X"
-    oo = x.all? "O"
+    xx = x.all? { |w| w == "X" }
+    oo = x.all? { |w| w == "O" }
     
     puts "x: #{x.inspect} -> #{xx}/#{oo}"
     # if x.all?("X") || x.all?("O")
