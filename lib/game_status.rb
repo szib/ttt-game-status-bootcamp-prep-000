@@ -25,7 +25,7 @@ def won?(board)
     
     # puts "x: #{x.inspect} -> #{xx}/#{oo}"
     if x.all? { |w| w == "X" } || x.all? { |w| w == "O" }
-      return true
+      return a_combination
     end
   end
   return false
