@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |a_combination|
+    console.log(a_combination)
     x = a_combination.map { |x| board[x] }
     return true if x.all?("X") || x.all?("O")
   end
