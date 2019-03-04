@@ -16,5 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  return false if board.all?(" ")
+  WIN_COMBINATIONS.each do |a_combination|
+    x = a_combination.map { |x| board[x] }
+    return true if x.all?("X") || x.all?("O")
+  end
+  false
 end
