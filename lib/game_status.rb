@@ -35,7 +35,7 @@ def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
-def winner?(board)
+def winner(board)
   winning_combination = won?(board)
   puts winning_combination.inspect
   board[winning_combination[0]]
