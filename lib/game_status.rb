@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |a_combination|
-    puts a_combination
+    puts a_combination.inspect
     x = a_combination.map { |x| board[x] }
     puts "x: #{x.inspect}"
     if x.all?("X") || x.all?("O")
